@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Da nonna Lidia</title>
+        <meta charset="utf-8">
+        <link rel="icon" href="Logo 500x500 px.jpeg">
+        <link rel="stylesheet" href="mystyle.css">
+        <script src="formvalidation.js"></script>
+    </head>
+    <body>
+        <a class="skip-nav-link" href="#contpre-content">Skip to Content</a>
+        <nav>
+            <ul>
+                <li>
+                    <a href="chisiamo.html">Chi siamo?</a>
+                </li>
+                <li>
+                    <a href="homepage.html">Home</a>
+                </li>
+                <li>
+                    <a href="menu.html">I nostri piatti</a>
+                </li>
+                <li>
+                    <a class="active" href="contattiprenotazioni.html">Contatti e prenotazioni</a>
+                </li>
+                <li style="float:right">
+                    <a href="areariservata.php">Area riservata</a>
+                </li>
+            </ul>
+        </nav>
+        <main id="contpre-content">
+            <section>
+                <h1>Contatti</h1>
+                <p class="bold">
+                    tel: 0290001111<br>
+                    mail: nonna@lidia.it
+                </p>
+            </section>
+            <section>
+                <h1>Prenota il tuo tavolo!</h1>
+                <div id="formutente">
+                    <form name="fu" action="prenotazioniutente.php" method="post">
+                        Inserisci i tuoi dati:<br>
+                        <input type="hidden" name="actionu" id="actionu" value="3">
+                        <input type="text" name="nu" id="nu" placeholder="name" size="10" onchange=""><br>
+                        <input type="text" name="eu" id="eu" placeholder="email" size="10"><br>
+                        <input type="text" name="du" id="du" placeholder="date" size="10"><br>
+                        <input type="text" name="hu" id="hu" placeholder="hour" size="10"><br>
+                        <input type="text" name="pu" id="pu" placeholder="number" size="10"><br>
+                        <input type="submit" value="Ok" onclick="checkForm()">
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer>
+            &copy;Nonna Lidia
+        </footer>
+    </body>
+</html>
