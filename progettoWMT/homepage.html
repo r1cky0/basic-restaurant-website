@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Da nonna Lidia</title>
+        <meta charset="utf-8">
+        <link rel="icon" href="images\Logo 500x500 px.jpeg">
+        <link rel="stylesheet" href="mystyle.css">
+        <script src="homepagecode.js"></script>
+    </head>
+    <body>
+        <a class="skip-nav-link" href="#home-content">Skip to Content</a>
+        <nav>
+            <ul>
+                <li>
+                    <a href="chisiamo.html">Chi siamo?</a>
+                </li>
+                <li>
+                    <a class="active" href="homepage.html">Home</a>
+                </li>
+                <li>
+                    <a href="menu.html">I nostri piatti</a>
+                </li>
+                <li>
+                    <a href="contattiprenotazioni.html">Contatti e prenotazioni</a>
+                </li>
+                <li style="float:right">
+                    <a href="areariservata.php">Area riservata</a>
+                </li>
+            </ul>
+        </nav>
+        <main id="home-content">
+            <section>
+                <h1>Un piccolo assaggio...</h1>
+                <img id="homeimage" src="images\piatto1.jpg" alt="paccheri" width="600" height="400">
+                <form name="homeform">
+                    <input class="button shadowbutton" type="button" value="Immagine precedente" onclick="changeImage(0)">
+                    <input class="button shadowbutton" type="button" value="Immagine successiva" onclick="changeImage(1)">
+                </form>
+            </section>
+            <section>
+                <h1>Dove siamo?</h1>
+                <p class="bold">
+                    Cascina fantasia, via Turati 10, Boschetto (MI)
+                </p>
+            </section>
+            <section>
+                <h1>Giorni e orari di apertura</h1>
+                <table id="timetable" summary="Restaurant timetable">
+                    <tr>
+                        <td id="days">Giorni</td>
+                        <td id="lu">Lunedì</td>
+                        <td id="ma">Martedì</td>
+                        <td id="me">Mercoledì</td>
+                        <td id="gi">Giovedì</td>
+                        <td id="ve">Venerdì</td>
+                        <td id="sa">Sabato</td>
+                        <td id="do">Domenica</td>
+                    </tr>
+                    <tr>
+                        <td id="pranzo">Pranzo</td>
+                        <td headers="days pranzo lu">12-14</td>
+                        <td headers="days pranzo ma">12-14</td>
+                        <td headers="days pranzo me">12-14</td>
+                        <td headers="days pranzo gi">12-14</td>
+                        <td headers="days pranzo ve">12-14</td>
+                        <td headers="days pranzo sa">12-14</td>
+                        <td headers="days pranzo do">12-14</td>
+                    </tr>
+                    <tr>
+                        <td id="cena">Cena</td>
+                        <td headers="days cena lu">19-24</td>
+                        <td headers="days cena ma">19-24</td>
+                        <td headers="days cena me">19-24</td>
+                        <td headers="days cena gi">19-24</td>
+                        <td headers="days cena ve">19-24</td>
+                        <td headers="days cena sa">19-24</td>
+                        <td headers="days cena do">19-24</td>
+                    </tr>
+                </table>
+            </section>
+        </main>
+        <footer>
+            &copy;Nonna Lidia
+        </footer>
+    </body>
+</html>
